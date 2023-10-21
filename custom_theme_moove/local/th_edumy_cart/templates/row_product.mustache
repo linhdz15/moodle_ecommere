@@ -1,0 +1,21 @@
+<tr>
+	<td class="product_img">
+		{{#img}} 
+			{{#img}}
+			<img src="{{img}}"/>
+			{{/img}}
+		{{/img}}
+	</td>
+	<td class="td-product_name">
+		<div class="product_title">
+			<span class="product-full-name">{{{fullname}}}</span>		
+		</div>
+	</td>
+	<td class="product_price_course">
+			<span class="total_price_sale">{{product_price_sale}}</span>
+			<span class="total_price_full">{{product_price_full}}</span>
+	</td>
+	{{^is_muangay}}
+	{{>local_th_edumy_cart/col_delete_product_btn}}
+	{{/is_muangay}}
+</tr>

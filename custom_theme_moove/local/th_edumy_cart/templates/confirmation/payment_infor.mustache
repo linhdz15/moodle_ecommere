@@ -1,0 +1,49 @@
+<div>
+    <h3 class="th-confirmation-title">
+        <strong>Cảm ơn bạn. Đơn hàng của bạn đã được nhận.</strong>
+    </h3>
+
+    <ul class="th-order-details">
+        <li class="">
+            Mã đơn hàng:<p>{{order_comfirmation.order_code}}</p>
+        </li>
+        
+        <li class="">
+            Tổng cộng:<p>
+                <span class="woocommerce-Price-amount amount"><bdi>{{order_total.total}}<span class="woocommerce-Price-currencySymbol">₫</span></bdi>
+                </span>
+            </p>
+        </li>
+
+        <li class="">
+            Phương thức thanh toán:<p>Chuyển khoản ngân hàng</p>
+        </li>     
+    </ul>
+    <ul class="th-order-payment">
+        <li>Họ và tên:<p> {{user_info.fullname}} </p></li>
+        <li>SĐT:<p>{{user_info.phone}}</p> </li>
+        <li>email:<p>{{user_info.email}}</p> </li>
+    </ul>
+    <div>
+        <div class='th-transfer-content alert alert-warning'>  
+            <p style="font-size:1.2em">Thông tin chuyển khoản ngân hàng</p>
+            
+                <p style="font-size: 1.1em;">{{account_name}}</p>
+                <ul class="th-order-payment">
+                    <li>Ngân hàng:<p>{{bank}}</p></li>
+                    <li>Số tài khoản:<p>{{account_number}}</p> </li>
+                </ul>
+                <span>Nội dung chuyển khoản: Quý khách vui lòng ghi đủ Họ tên, Số điện thoại, Mã đơn hàng để chúng tôi liên hệ xử lý đơn hàng.</span>
+            <br>
+            <span><i class="fa fa-warning" style="margin-right:10px;"></i>Chúng tôi đang chờ xác nhận từ ngân hàng hoặc nhà cung cấp thanh toán.</span>
+        </div>
+        <div class="d-flex justify-content-between" style="margin-top: 15px;">
+            <div data-oe-model="ir.ui.view" data-oe-id="2207" data-oe-field="arch" data-oe-xpath="/t[1]/t[1]/div[1]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]">
+                <a role="button" href={{shopping_link}} class="btn btn-secondary mb32 th-btn-go-back">
+                    <span class="fa fa-chevron-left"></span>
+                    <span>Xem khóa học khác</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

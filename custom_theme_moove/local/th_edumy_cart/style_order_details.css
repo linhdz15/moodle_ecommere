@@ -1,0 +1,131 @@
+.th-order-details h3 {
+    color: #82317f;
+}
+
+.th-order-details p {
+    font-size: 1.2em;
+    color: #82317f;
+}
+
+.th-order-details p span {
+    font-weight: 600;
+}
+
+.th-order-details .th-draft-order {
+    font-size: 0.9em;
+    padding: 4px 10px;
+    background-color: #ffc107 !important;
+}
+
+.th-order-details .th-sale-order {
+    font-size: 0.9em;
+    padding: 4px 10px;
+    background-color: #21c333 !important;
+}
+
+.th-order-details .th-order-product {
+    border-top: 2px solid #f5f5f5;
+    border-bottom: 2px solid #f5f5f5;
+    padding-top: 15px;
+    margin-top: 20px;
+}
+
+.th-order-details .th-order-product img {
+    width: 100px;
+    max-width: 100px;
+}
+
+.th-order-details .th-order-product .media {
+    align-items: center !important;
+    margin-bottom: 20px;
+} 
+
+.th-order-details .media-body h5 {
+    font-size: 1.2em;
+    color: #82317f;
+}
+
+.th-order-details .media-body span {
+    font-size: 1.1em;
+    color: #82317f;
+}
+
+.th-order-details .th-product-price {
+    display: grid;
+}
+
+.th-order-details .th-order-product .product-sale-price-new {
+    font-size: 1.1em;
+    margin-left: 0;
+    color: #82317f;
+    font-weight: 600;
+}
+
+.th-order-details .th-order-product .product-price-full {
+    font-size: 1.1em;
+    color: #82317f;
+    text-decoration-line: line-through;
+}
+
+.th-order-details .th-order-price {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #f5f5f5;
+}
+
+.th-order-details .th-order-price p {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+}
+
+.th-order-details .th-order-price .th-order-total{
+    color: tomato;
+    font-weight: 600;
+}
+
+.th-order-details .th-order-price .th-order-total span{
+    color: #82317f;
+}
+
+
+
+.th-order-details .th-order-price p span{
+    font-weight: 400;
+}
+
+.th-order-details .th-order-price p span i{
+    margin-right: 5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .th-order-details p {
+        font-size: 1.1em;
+    }
+
+    .th-order-details .th-order-product img {
+        width: 80px;
+        max-width: 80px;
+    }
+
+    .th-order-details .media-body h5 {
+        font-size: 1.1em;
+    }
+
+    .th-order-details .th-product-price .product-sale-price-new {
+        font-size: 1em;
+    }
+
+    .th-order-details .th-product-price .product-price-full {
+        font-size: 1em;
+    }
+
+    .th-order-details .th-order-customer h3 {
+        font-size: 1.2em;
+    }
+    
+    .th-order-details .th-order-customer ul li {
+        font-size: 1.1em;
+    }
+}

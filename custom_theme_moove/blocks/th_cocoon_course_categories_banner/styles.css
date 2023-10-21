@@ -1,0 +1,514 @@
+
+
+/* block_th_cocoon_course_categories_banner - banner */
+
+.cousre_categori ul {
+  padding: 1em 0.5em 1em 2em;
+  -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.01);
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.16);
+  border-radius: 6px;
+  height: 100%;
+  margin-left: 15px;
+  list-style: none;
+}
+
+.cousre_categori ul li {
+  padding: 0.6em 0;
+}
+
+.cousre_categori ul li a {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cousre_categori ul li a i{
+  width: 35px;
+  color: #82317f;
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+.cousre_categori ul li a span{
+  color: #000000;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.cousre_banner .carousel-item img {
+	height: 366px;
+	box-shadow: 0 0 5px 0 rgba(0,0,0,.16);
+	border-radius: 12px;
+}
+
+.course_banner_img {
+  margin-top: 20px
+}
+
+.course_banner_img img {
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.16);
+  border-radius: 6px;
+  border: 1px solid #dfd2da;
+  height: 150px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .cousre_categori ul{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+.cousre_banner .carousel-item img {
+  height: 210px;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.16);
+  border-radius: 12px;
+}
+
+.course_banner_img img {
+    height: 63px;
+  }
+}
+
+/* th_all_course */
+
+.th_all_course_title {
+  color: #0a0a0a;
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.th_all_course .product_item{
+ -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.01);
+ box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.01);
+ border-radius: 6px;
+ margin-bottom: 10px;
+ width: 100%;
+}
+
+.th_all_course .product_item .course_img{
+ display:block;
+ transition: all .3s ease;
+ height: 200px;
+ width: 100%;
+}
+
+.th_all_course .product_item .course_img:hover{
+ transform: scale(1.2);
+}
+
+.th_all_course .product_item div{
+ display:block;
+ overflow: hidden;
+}
+
+.th_all_course  .product-info {
+ margin-top: -5px;
+ padding: 0.7em;
+}
+
+.th_all_course  .product-info .text-decoration-none{
+ height: 100px;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ font-size: 1.2em;
+ font-weight: 600;
+ line-height: 1.4em;
+ font-family: 'Montserrat', sans-serif;
+}
+
+
+.th_all_course  .product-img{
+ position: relative;
+ overflow: hidden;
+ border-top-right-radius: 6px !important;
+ border-top-left-radius: 6px !important;
+}
+
+.th_all_course  .product-type{
+ font-size: 13px;
+ opacity: 0.8;
+}
+.th_all_course  .product-name{
+ font-size: 1.2em;
+ font-weight: 600;
+ color: #82317f;
+}
+
+.th_all_course  .product-name:hover {
+ color: #82317f;
+}
+
+.th_all_course  .product-name:focus {
+ color: #82317f;
+}
+
+.th_all_course  .product-price{
+ color: #fcb941;
+}
+
+.th_all_course  .teacher-course{
+ display: flex !important;
+ align-items: center;
+ margin: 0 0 15px 0;
+}
+
+.th_all_course  .teacher-course img {
+ width: 40px !important;
+ height: 40px !important;
+ border-radius: 50%;
+ -o-object-fit: cover;
+ object-fit: cover;
+}
+
+.th_all_course  .teacher-course span {
+ margin-left: 7px;
+ font-weight: 600;
+ color: #333;
+}
+
+.th_all_course  .product_buy {
+	display: flex !important;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.th_all_course .product_add_to_cart {
+	border-radius: 50%;
+  background-image: linear-gradient(#be128c,#82317f);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 43px;
+  line-height: 40px;
+  text-align: center;
+  margin-left: 45px;
+  width: 43px;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.th_all_course .product_add_to_cart:hover {
+  color: #fff;
+}
+
+.th_all_course  .price_course {
+ display: flex !important;
+ justify-content: space-between ;
+ align-items: center;
+}
+
+.th_all_course  .product-buy-now {
+ padding: 0.5em 0.7em;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#be128c), to(#82317f));
+ background-image: linear-gradient(#be128c, #82317f);
+ color: #fff !important;
+ border-radius: 6px;
+ display: inline-block;
+ background-color: transparent;
+ cursor: pointer;
+}
+
+.th_all_course .product-price-full {
+ margin-right: 0.5em;
+ color: #9e9e9e;
+ font-size: 1em;
+ font-weight: 400;
+ text-decoration: line-through;
+}
+
+.th_all_course  .product-sale-price-new {
+ margin: 0;
+ color: tomato;
+ font-weight: 600;
+ font-size: 1em;
+}
+
+.th_all_course  .btns{
+ position: absolute;
+ left: 0;
+ bottom: -100%;
+ font-size: 15px;
+ font-weight: 300;
+ transition: all 0.3s ease-in-out;
+}
+.th_all_course  .btns button{
+ border: none;
+ background-color: rgb(39, 39, 39);
+ color: #fff;
+ transition: all 0.3s ease-in-out;
+}
+
+.th_all_course  .btns button:hover{
+ color: #fcb941;
+}
+
+.th_all_course .product-img:hover .btns{
+ bottom: 0;
+}
+
+/* th_course_categories */
+
+.th_course_categories_title {
+  color: #0a0a0a;
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.th_course_categories .product_item{
+ -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.01);
+ box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.01);
+ border-radius: 6px;
+ margin-bottom: 10px;
+ width: 100%;
+}
+
+.th_course_categories .product_item .course_img{
+ display:block;
+ transition: all .3s ease;
+ height: 200px;
+ width: 100%;
+}
+
+.th_course_categories .product_item .course_img:hover{
+ transform: scale(1.2);
+}
+
+.th_course_categories .product_item div{
+ display:block;
+ overflow: hidden;
+}
+
+.th_course_categories  .product-info {
+ margin-top: -5px;
+ padding: 0.7em;
+}
+
+.th_course_categories  .product-info .text-decoration-none{
+ height: 100px;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ font-size: 1.2em;
+ font-weight: 600;
+ line-height: 1.4em;
+ font-family: 'Montserrat', sans-serif;
+}
+
+
+.th_course_categories  .product-img{
+ position: relative;
+ overflow: hidden;
+ border-top-right-radius: 6px !important;
+ border-top-left-radius: 6px !important;
+}
+
+.th_course_categories  .product-type{
+ font-size: 13px;
+ opacity: 0.8;
+}
+.th_course_categories  .product-name{
+ font-size: 1.2em;
+ font-weight: 600;
+ color: #82317f;
+}
+
+.th_course_categories  .product-name:hover {
+ color: #82317f;
+}
+
+.th_course_categories  .product-name:focus {
+ color: #82317f;
+}
+
+.th_course_categories  .product-price{
+ color: #fcb941;
+}
+
+.th_course_categories  .teacher-course{
+ display: flex !important;
+ align-items: center;
+ margin: 0 0 15px 0;
+}
+
+.th_course_categories  .teacher-course img {
+ width: 40px !important;
+ height: 40px !important;
+ border-radius: 50%;
+ -o-object-fit: cover;
+ object-fit: cover;
+}
+
+.th_course_categories  .teacher-course span {
+ margin-left: 7px;
+ font-weight: 600;
+ color: #333;
+}
+
+.th_course_categories  .price_course {
+ display: flex !important;
+ justify-content: space-between ;
+ align-items: center;
+}
+
+.th_course_categories  .product-buy-now {
+ padding: 0.5em 0.7em;
+ background-image: -webkit-gradient(linear, left top, left bottom, from(#be128c), to(#82317f));
+ background-image: linear-gradient(#be128c, #82317f);
+ color: #fff !important;
+ border-radius: 6px;
+ display: inline-block;
+ background-color: transparent;
+}
+
+.th_course_categories .product-price-full {
+ margin-right: 0.5em;
+ color: #9e9e9e;
+ font-size: 1em;
+ font-weight: 400;
+ text-decoration: line-through;
+}
+
+.th_course_categories  .product-sale-price-new {
+ margin: 0;
+ color: tomato;
+ font-weight: 600;
+ font-size: 1em;
+}
+
+.th_course_categories  .btns{
+ position: absolute;
+ left: 0;
+ bottom: -100%;
+ font-size: 15px;
+ font-weight: 300;
+ transition: all 0.3s ease-in-out;
+}
+.th_course_categories  .btns button{
+ border: none;
+ background-color: rgb(39, 39, 39);
+ color: #fff;
+ transition: all 0.3s ease-in-out;
+}
+
+.th_course_categories  .btns button:hover{
+ color: #fcb941;
+}
+
+.th_course_categories .product-img:hover .btns{
+ bottom: 0;
+}
+
+/*slider*/
+
+.th_slider .slider {
+  position: relative;
+  background: transparent;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.th_slider .slider .slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: circle(0% at 0 50%);
+  clip-path: circle(0% at 0 50%);
+}
+
+.th_slider .slider .slide.active {
+  -webkit-clip-path: circle(150% at 0 50%);
+  clip-path: circle(150% at 0 50%);
+  -webkit-transition: 2s;
+  transition: 2s
+}
+
+.th_slider .slider .slide img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px
+}
+
+.th_slider .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  opacity: 0;
+  height: 366px;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease
+}
+
+.th_slider .slider:hover .navigation {
+  opacity: 1
+}
+
+.th_slider .prev-btn,.next-btn {
+  z-index: 999;
+  font-size: 2em;
+  color: #222;
+  padding: 10px;
+  cursor: pointer;
+  background: rgba(255,255,255,0.8);
+}
+
+.th_slider .prev-btn {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px
+}
+
+.th_slider .next-btn {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px
+}
+
+.th_slider .navigation-visibility {
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center
+}
+
+.th_slider .navigation-visibility .slide-icon {
+  z-index: 2;
+  background: rgba(255,255,255,0.2);
+  width: 20px;
+  height: 10px;
+  -webkit-transform: translateY(-50px);
+  transform: translateY(-50px);
+  margin: 0 6px;
+  border-radius: 2px;
+  -webkit-box-shadow: 0 5px 25px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 25px rgba(0,0,0,0.3)
+}
+
+.th_slider .navigation-visibility .slide-icon.active {
+  background: #82317f
+}
+
+@media only screen and (max-width: 768px){
+  .th_slider .slider {
+    height: 210px;
+  }
+
+  .th_slider .navigation {
+    height: 210px;
+  }
+}
+
+

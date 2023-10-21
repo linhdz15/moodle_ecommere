@@ -1,0 +1,11 @@
+<a id="{{btnid}}" class="product_add_to_cart" data-courseid={{courseid}}><i class="fa fa-cart-plus" aria-hidden="true"></i></a>
+
+{{#js}}
+require(['jquery','local_th_ecommercelib/th_cart'], function($,cart) {
+	
+	$(document).ready(()=>{
+		cart.add_to_cart("#{{btnid}}");
+	})
+	
+});
+{{/js}}

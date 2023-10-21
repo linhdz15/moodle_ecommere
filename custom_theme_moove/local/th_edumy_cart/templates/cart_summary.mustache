@@ -1,0 +1,59 @@
+<div class="product_cart_total" id="th_cart_summary">
+	<div class="card-body">
+		<h4 >Thông tin đơn hàng</h4>
+		<hr>
+		<div>
+			<div id="cart_total" class="">
+				<table class="table mb-0">
+					<tbody>
+						<tr>
+							<td>Tạm tính:</td>
+							<td class="waiting-load">
+								{{total_price}}đ
+							</td>
+						</tr>
+						<tr >
+							<td>Giảm giá:</td>
+							<td class="waiting-load">
+								{{sale_price}}đ
+							</td>
+						</tr>
+						<tr>
+							<td><strong>Tổng thanh toán:</strong></td>
+							<td class="waiting-load">
+								<strong>{{total_price}}đ</strong>
+							</td>
+						</tr>					
+						<tr>
+							<td colspan="3" class="text-center text-xl-end border-0">	
+								<div class="coupon row">
+									<form method="POST">										
+										<input type="hidden" name="action" value="apply_discount_code" />
+										<input type="text" autocomplete="off" name="discount_code" class="input-text col-xl-9" id="discount_code" value="" placeholder="Mã ưu đãi"> 
+										<button type="submit" class="button col-xl-3" name="apply_coupon" value="Áp dụng">Áp dụng</button>
+									</form>									
+								</div>
+							</td>
+						</tr>
+						<tr class="oe_website_sale_gift_card">							
+							<td colspan="3" class="text-center text-xl-end border-0">
+								{{#error_code}}
+								<div class="alert alert-danger text-start mt16" role="alert" data-oe-model="ir.ui.view" data-oe-id="2273" data-oe-field="arch" data-oe-xpath="/data/xpath/tr/td[1]/span[1]/t[1]/div[1]">
+									{{#str}}invalidcode, local_th_edumy_cart{{/str}}
+								</div>
+								{{/error_code}}
+								{{#claimable_discount_and_giftcard}}
+								{{>local_th_edumy_cart/row_giftcard}}
+								{{/claimable_discount_and_giftcard}}
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<a href="payment.php?key={{payment_key}}" class="th_product_payment" role="button">
+				<span>Tiến hành thanh toán</span>
+				<i class="fa fa-chevron-right"></i>
+			</a>
+		</div>
+	</div>
+</div>

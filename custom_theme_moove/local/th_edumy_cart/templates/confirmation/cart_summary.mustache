@@ -1,0 +1,35 @@
+<div class="payment_info">
+    <h2>Đơn hàng của bạn</h2>
+</div>
+<div class="th-payment-product">
+    <table id="cart_products_payment">
+        <thead class="th-thead">
+            <tr class="th-tr">
+                <th class="th-th td-img" data-oe-model="ir.ui.view" data-oe-id="2206" data-oe-field="arch" data-oe-xpath="/t[1]/table[1]/thead[1]/tr[1]/th[1]">Sản phẩm</th>
+                <th class="th-th text-center td-price" data-oe-model="ir.ui.view" data-oe-id="2206" data-oe-field="arch" data-oe-xpath="/t[1]/table[1]/thead[1]/tr[1]/th[4]">Giá</th>
+            </tr>
+        </thead>
+        <tbody class="th-tbody">
+            {{#products}}
+                {{>local_th_edumy_cart/row_product_payment}}
+            {{/products}}
+            {{#coupon_applied}}
+                {{>local_th_edumy_cart/payment_giftcard_product}}
+            {{/coupon_applied}}                         
+        </tbody>
+        <tfoot class="th-tfoot">
+            <tr class="cart-subtotal th-tr">
+                <th class="th-th">Tạm tính</th>
+                <td class="th-td"><span class="total_price_sale">{{order_total.subtotal}}đ</span></td>
+            </tr>
+            <tr class="order-total th-tr">
+                <th class="th-th">Thuế</th>
+                <td class="th-td"><span class="total_price_sale">{{order_total.tax}}đ</span></td>
+            </tr>
+            <tr class="order-total th-tr">
+                <th class="th-th">Tổng</th>
+                <td class="th-td"><span class="total_price_sale">{{order_total.total}}đ</span></td>
+            </tr>
+        </tfoot>
+    </table>
+</div>

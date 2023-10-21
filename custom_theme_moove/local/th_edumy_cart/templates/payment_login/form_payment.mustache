@@ -1,0 +1,11 @@
+<form method="POST" onsubmit="return validateForm()">
+    <input type="hidden" name="cart_info" value="{{cart_info}}" />
+    <input type="hidden" name="action" value="paid" />
+    <div class="payment_order">
+        {{>local_th_edumy_cart/payment_methods}}
+        {{#is_muangay}}
+        <input type="hidden" name="type_cart" value="type_muangay" />
+        {{/is_muangay}}
+        <input type="submit" value="Thanh toán ngay" class="th_product_payment">
+    </div>
+</form>

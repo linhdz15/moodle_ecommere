@@ -1,0 +1,214 @@
+.path-block_th_featured_courses_masonry .title-cate {
+	margin-left: 15px;
+	margin-bottom: -15px;
+	font-size: 1.7em;
+	font-weight: 700;
+}
+
+.path-block_th_featured_courses_masonry .items-slider{
+	max-height: 420px;
+}
+
+.path-block_th_featured_courses_masonry .slick-slide {
+	height: auto;
+}
+
+.path-block_th_featured_courses_masonry .product_item{
+	-webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.01);
+	box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.01);
+	border-radius: 6px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.path-block_th_featured_courses_masonry .product_item .course_img{
+	display:block;
+	transition: all .3s ease;
+	height: 150px;
+	width: 100%;
+}
+
+.path-block_th_featured_courses_masonry .product_item .course_img:hover{
+	transform: scale(1.2);
+}
+
+.path-block_th_featured_courses_masonry .product_item div{
+	display:block;
+	overflow: hidden;
+}
+
+.path-block_th_featured_courses_masonry  .product-info {
+	margin-top: -5px;
+	padding: 0.7em;
+}
+
+.path-block_th_featured_courses_masonry  .product-info .text-decoration-none{
+	height: 105px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 1em;
+	font-weight: 600;
+	line-height: 1.4em;
+	font-family: sans-serif;
+}
+
+
+.path-block_th_featured_courses_masonry  .product-img{
+	position: relative;
+	overflow: hidden;
+	border-top-right-radius: 6px !important;
+	border-top-left-radius: 6px !important;
+}
+
+.path-block_th_featured_courses_masonry  .product-type{
+	font-size: 13px;
+	opacity: 0.8;
+}
+.path-block_th_featured_courses_masonry  .product-name{
+	font-size: 1em;
+	font-weight: 600;
+	color: #82317f;
+}
+
+.path-block_th_featured_courses_masonry  .product-name:hover {
+	color: #82317f;
+}
+
+.path-block_th_featured_courses_masonry  .product-name:focus {
+	color: #82317f;
+}
+
+.path-block_th_featured_courses_masonry  .product-price{
+	color: #fcb941;
+}
+
+.path-block_th_featured_courses_masonry  .teacher-course{
+	display: flex !important;
+	align-items: center;
+	margin: 0 0 15px 0;
+}
+
+.path-block_th_featured_courses_masonry  .teacher-course img {
+	width: 40px !important;
+	height: 40px !important;
+	border-radius: 50%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.path-block_th_featured_courses_masonry  .teacher-course span {
+	margin-left: 7px;
+	font-weight: 600;
+	color: #333;
+	font-size: 0.9em;
+}
+
+.path-block_th_featured_courses_masonry  .price_course {
+	display: flex !important;
+	justify-content: space-between ;
+	align-items: center;
+	height: 20px;
+}
+
+.path-block_th_featured_courses_masonry  .product-buy-now {
+	padding: 0.4em 0.5em;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#be128c), to(#82317f));
+	background-image: linear-gradient(#be128c, #82317f);
+	color: #fff !important;
+	border-radius: 6px;
+	display: inline-block;
+	background-color: transparent;
+	font-size: 0.9em;
+}
+
+.path-block_th_featured_courses_masonry  .product_buy {
+	display: flex !important;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.path-block_th_featured_courses_masonry .product_add_to_cart {
+	border-radius: 50%;
+    background-image: linear-gradient(#be128c,#82317f);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: 45px;
+    width: 36px;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+
+
+.path-block_th_featured_courses_masonry .product_add_to_cart:hover {
+    color: #fff;
+}
+
+.path-block_th_featured_courses_masonry .product-price-full {
+	margin-left: 10px;
+	color: #9e9e9e;
+	font-size: 0.9em;
+	font-weight: 400;
+	text-decoration: line-through;
+}
+
+.path-block_th_featured_courses_masonry  .product-sale-price-new	{
+	margin: 0;
+	color: tomato;
+	font-weight: 600;
+	font-size: 0.9em;
+}
+
+.path-block_th_featured_courses_masonry  .btns{
+	position: absolute;
+	left: 0;
+	bottom: -100%;
+	font-size: 15px;
+	font-weight: 300;
+	transition: all 0.3s ease-in-out;
+}
+.path-block_th_featured_courses_masonry  .btns button{
+	border: none;
+	background-color: rgb(39, 39, 39);
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+}
+
+.path-block_th_featured_courses_masonry  .btns button:hover{
+	color: #fcb941;
+}
+
+.path-block_th_featured_courses_masonry .product-img:hover .btns{
+	bottom: 0;
+}
+
+@media only screen and (max-width: 375px) {
+	.path-block_th_featured_courses_masonry  .price_course .product_price {
+		display: inline-grid;
+	}
+
+	.path-block_th_featured_courses_masonry  .product-info .text-decoration-none {
+		height: 135px;
+	}
+}
+
+
+@media only screen and (max-width: 767px) {
+	.path-block_th_featured_courses_masonry  .slick-list{
+		padding:0 10% 0 0 !important;
+	}
+
+	.path-block_th_featured_courses_masonry  .product_item .course_img:hover{
+		transform: none
+	}
+}
+
+@media (max-width:1350px) and (min-width: 1199px){
+	.path-block_th_featured_courses_masonry  .product-info .text-decoration-none {
+		height: 120px;
+	}
+}

@@ -1,0 +1,27 @@
+<div class="cart_product_info">
+    <table class="mb16 table table-striped table-sm js_cart_lines" id="cart_products">
+        <thead>
+            <tr>
+                <th class="td-img" data-oe-model="ir.ui.view" data-oe-id="2206" data-oe-field="arch" data-oe-xpath="/t[1]/table[1]/thead[1]/tr[1]/th[1]">Khóa Học</th>
+                <th class="td-img" data-oe-model="ir.ui.view" data-oe-id="2206" data-oe-field="arch" data-oe-xpath="/t[1]/table[1]/thead[1]/tr[1]/th[1]"></th>
+                <th class="text-center td-price" data-oe-model="ir.ui.view" data-oe-id="2206" data-oe-field="arch" data-oe-xpath="/t[1]/table[1]/thead[1]/tr[1]/th[4]">Giá</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#products}}
+                {{>local_th_edumy_cart/row_product}}
+            {{/products}}  
+            {{#coupon_applied}}
+                {{>local_th_edumy_cart/row_giftcard_product}}
+            {{/coupon_applied}}                         
+        </tbody>
+    </table>
+</div>
+<div class="d-flex justify-content-between">
+    <div>
+        <a role="button" href={{config.wwwroot}} class="btn btn-secondary mb32 th-btn-go-back">
+            <span class="fa fa-chevron-left"></span>
+            <span>Xem khóa học khác</span>
+        </a>
+    </div>
+</div>

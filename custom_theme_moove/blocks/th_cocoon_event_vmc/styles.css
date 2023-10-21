@@ -1,0 +1,123 @@
+.th_cocoon_event_vmc{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.th_cocoon_event_vmc .th_cocoon_event_vmc_title {
+    margin-left: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.th_cocoon_event_vmc .th_cocoon_event_card {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.th_cocoon_event_vmc_title h2{
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.th_cocoon_event_vmc .event_item{
+    -webkit-box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.01);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.01);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    width: 100%;
+   }
+   
+.th_cocoon_event_vmc .event_item .event_img{
+    display:block;
+    transition: all .3s ease;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+    border-radius: 6px;
+    min-height: 127.2px;
+    max-height: 127.2px;
+}
+   
+.th_cocoon_event_vmc .event_item .event_img:hover{
+    transform: scale(1.2);
+}
+   
+.th_cocoon_event_vmc .event_item div{
+    display:block;
+    overflow: hidden;
+}
+   
+.th_cocoon_event_vmc  .event-info {
+    margin-top: 5px;
+    padding: 0.7em;
+}
+   
+.th_cocoon_event_vmc  .event-info .text-decoration-none{
+    height: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.2em;
+    font-weight: 600;
+    line-height: 1.4em;
+    font-family: 'Montserrat', sans-serif;
+}
+   
+   
+.th_cocoon_event_vmc  .event-img{
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 6px !important;
+    border-top-left-radius: 6px !important;
+   }
+   
+.th_cocoon_event_vmc  .event-type{
+    font-size: 13px;
+    opacity: 0.8;
+   }
+.th_cocoon_event_vmc  .event-name{
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #82317f;
+}
+   
+.th_cocoon_event_vmc  .event-name:hover {
+    color: #82317f;
+}
+   
+.th_cocoon_event_vmc  .event-name:focus {
+    color: #82317f;
+}
+   
+.th_cocoon_event_vmc  .event-date{
+    display: flex !important;
+    align-items: center;
+    font-size: 0.9em;
+}
+   
+.th_cocoon_event_vmc  .event-date span {
+    margin-left: 7px;
+    font-weight: 600;
+    color: #333;
+}
+  
+.th_cocoon_event_vmc .event-img:hover .btns{
+    bottom: 0;
+}
+
+.th_cocoon_event_vmc .viewall-events {
+    margin-top: 1em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.th_cocoon_event_vmc .viewall-events a {
+    text-decoration: none !important;
+    color: #82317f !important;
+    font-size: 1.2em;
+}
+
+@media only screen and (max-width: 1200px) {
+    .th_cocoon_event_vmc .event_item div{
+        margin-bottom: 20px;
+    }
+  }

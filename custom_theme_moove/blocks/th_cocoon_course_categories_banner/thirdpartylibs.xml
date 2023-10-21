@@ -1,0 +1,9 @@
+<libraries>
+    <library>
+        <location>amd/src/</location>
+        <name>Javascript</name>
+        <version>3.6.2</version>
+        <license>Apache</license>
+        <licenseversion>2.0</licenseversion>
+    </library>
+</libraries>

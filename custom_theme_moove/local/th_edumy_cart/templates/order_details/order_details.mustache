@@ -1,0 +1,31 @@
+<div class="th-order-details">
+    <h3>Chi tiết đơn hàng</h3>
+    {{#cart}}
+    <div>
+        <p>Mã đơn hàng: <span>{{ordername}}</p>
+        <p>Ngày đặt: {{order_date}}</p>
+        <p>Phương thức thanh toán: {{payment_provider}}</p>
+        <p style="margin-top: -5px;">Trạng thái: <span class="badge badge-warning {{class_status}}">{{status}}</span></p>
+        <div class="th-order-product">
+            {{#product}}
+            <div href ="#" class="media">
+                <img class="mr-3" src="{{img}}" alt="Generic placeholder image">
+                <div class="media-body">
+                    <h5 class="mt-0">{{name}}</h5>
+                </div>
+                <div class ="th-product-price ml-3">
+                    <span class = "product-sale-price-new">{{price_sale}}</span>
+                    <span class = "product-price-full">{{price_full}}</span>            
+                </div>
+            </div>
+            {{/product}}
+        </div>
+        <div class="th-order-price">
+            {{#discount_code}}
+            <p><span><i class="fa fa-gift" aria-hidden="true"></i>{{discount_code.name}}:</span> {{discount_code.subtotal}}</p>
+            {{/discount_code}}
+            <p class="th-order-total"><span>Tổng tiền:</span> {{total}}</p>
+        </div>
+    </div>
+    {{/cart}} 
+</div>

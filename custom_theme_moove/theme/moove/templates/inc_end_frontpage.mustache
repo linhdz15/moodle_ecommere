@@ -1,0 +1,47 @@
+
+
+    {{{ output.standard_after_main_region_html }}}
+
+    
+</div><!-- Ends .page-wrapper -->
+
+{{> theme_moove/footer_frontpage }}
+
+</body>
+</html>
+{{#js}}
+require(['theme_boost/loader']);
+
+require(['theme_boost/drawer'], function(mod) {
+    mod.init();
+});
+
+require(['theme_moove/metismenu', 'jquery'], function(metisMenu, $) {
+    $(".metismenu").metisMenu();
+});
+
+require([], function() {
+    var iconsearch = document.querySelector('.moove-search-input .slicon-magnifier');
+    var btnclosesearch = document.querySelector('.search-input-form .close-search');
+    var searchinputform = document.querySelector('.moove-search-input');
+
+    if (iconsearch) {
+
+        var togglesearchinputform = function() {
+            searchinputform.classList.toggle('expanded');
+        }
+
+        iconsearch.onclick = togglesearchinputform;
+        btnclosesearch.onclick = togglesearchinputform;
+    }
+});
+
+require(['theme_moove/accessibilitybar'], function(bar) {
+    bar.init();
+});
+
+require(['theme_moove/themesettings'], function(themesettings) {
+    themesettings.init();
+});
+
+{{/js}}

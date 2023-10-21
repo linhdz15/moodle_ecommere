@@ -1,0 +1,16 @@
+<div class = 'payment_info'><h2>Thông tin thanh toán</h2>
+    <div class="customer_info">
+        <label for='fname'>Họ và tên *:</label>
+        <input name="fullname" type='text' id='nameInput'  placeholder='Nhập họ tên' autocomplete="off" onblur="validateName()">
+        <span id="nameError" class="input-error"></span>
+    </div>
+    <div class="customer_info">
+        <label for='lname'>Số điện thoại *:</label>
+        <input  name="phone" type='text' id="phoneInput"  placeholder='Nhập điện thoại' autocomplete="off" onblur="validatePhoneNumber()">
+        <span id="phoneError" class="input-error"></span>
+    </div>
+    <div class="customer_info">
+        <label for='lname'>Email:</label>
+        <input name="email" type='text' id='emailInput' placeholder='Nhập email' autocomplete="off">
+    </div>        
+</div>

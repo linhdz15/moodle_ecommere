@@ -1,0 +1,27 @@
+<div class="th-product">
+    <div class="th-code-orders">
+        <ul class="th-order-info">
+            <li>Mã đơn hàng: <span>{{ordername}}</li>
+            <li>Ngày đặt: <span>{{order_date}}</span></li>
+            <span class="badge badge-warning {{class_status}}">{{status}}</span>
+        </ul>
+       
+    </div>
+    {{#product}}
+        <div href ="#" class="media">
+            <img class="mr-3" src="{{{img}}}">
+          
+            <div class="media-body">
+                <h5 class="mt-0">{{name}}</h5>
+                <span></span>
+            </div>
+            <div class ="th-product-price ml-3">
+                <span class = "product-sale-price-new">{{price_sale}}</span>
+                <span class = "product-price-full">{{price_full}}</span>            
+            </div>
+        </div>
+    {{/product}}
+    <div>
+            <a class="th-product-detail" href="{{url}}?order={{ordername}}">Xem chi tiết <i class="fa fa-chevron-right"></i></a> 
+    </div>
+</div>

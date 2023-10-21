@@ -1,0 +1,13 @@
+<a class="th-cart-num" href="{{{ config.wwwroot }}}/local/th_edumy_cart/index.php"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    <span id="th_lblCartCount" class="th_lblCartCount cart-item-count th-cart-item-count">
+    </span>
+</a>
+
+{{#js}}
+require(['jquery','local_th_ecommercelib/th_cart'], function($,cart) {
+    $(document).ready(()=>{
+        cart.update_cart_number();
+    });
+});
+
+{{/js}}

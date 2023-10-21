@@ -1,0 +1,18 @@
+<table class="table payment_methods">
+    <thead>
+    <tr>
+        <th scope="col">Chọn phương thức thanh toán</th>
+    </tr>
+    </thead>
+        {{#payment_methods}}
+        <tr>
+            <td>
+                <input type="radio" name="option" id="option1" value="{{value}}" checked>
+                <label for="option1">{{text}}</label>
+            </td>
+        </tr>
+        {{/payment_methods}}
+    </tbody>
+
+    </table>
+
