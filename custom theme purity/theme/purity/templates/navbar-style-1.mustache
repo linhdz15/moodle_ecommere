@@ -19,10 +19,6 @@
 }}
 <nav class="top-navigation navbar navbar-top navbar-expand border-bottom {{#header_light}}navbar-light bg-white{{/header_light}}{{#header_dark}}navbar-dark bg-default{{/header_dark}}" aria-label="{{#str}}sitemenubar, admin{{/str}}">
 
-        <div data-region="drawer-toggle" class="d-inline-block nav-drawer-btn-container">
-            <button aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="nav-drawer-btn btn btn-primary btn-sm" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">{{#pix}}i/menubars{{/pix}}<span class="sr-only">{{#str}}sidepanel, core{{/str}}</span></button>
-        </div>
-
         {{# show_header_navbar_brand }}
         <a href="{{{ config.wwwroot }}}" class="navbar-brand aabtn {{# show_header_logo }}{{# output.should_display_header_logo }}has-logo{{/ output.should_display_header_logo }}{{/ show_header_logo }}
             {{^ output.should_display_header_logo }}
@@ -50,7 +46,7 @@
 
         <ul class="nav navbar-nav plugin-menu d-flex ml-auto">
             {{# show_lang_menu }}
-            <li class="nav-item item-separator">
+            <li class="nav-item th_navbar_lang_menu">
                 {{{ output.render_lang_menu }}}
             </li>
             {{/ show_lang_menu }}
@@ -65,6 +61,9 @@
             <li class="nav-item d-flex align-items-center">
                 {{{ output.user_menu }}}
             </li>
+            <div data-region="drawer-toggle" class="d-inline-block nav-drawer-btn-container">
+                <button aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="nav-drawer-btn btn btn-primary btn-sm" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav">{{#pix}}i/menubars{{/pix}}<span class="sr-only">{{#str}}sidepanel, core{{/str}}</span></button>
+            </div>
         </ul>
 </nav>
 

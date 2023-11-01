@@ -10,6 +10,9 @@
 		<a href="{{{ config.wwwroot }}}" class="logo">
 			<img src="{{{ navdrawer_logo_url }}}" alt="{{sitename}}">
 		</a>
+        <div data-region="drawer-toggle" class="d-inline-block nav-drawer-btn-container">
+            <button aria-expanded="{{#navdraweropen}}true{{/navdraweropen}}{{^navdraweropen}}false{{/navdraweropen}}" aria-controls="nav-drawer" type="button" class="nav-drawer-btn btn btn-primary btn-sm toggle-menu-icon" data-action="toggle-drawer" data-side="left" data-preference="drawer-open-nav"><span class="sr-only">{{#str}}sidepanel, core{{/str}}</span></button>
+        </div>
 	</div>
 	{{/ show_navdrawer_logo }}
 	<div class="navdrawer-navigation">
@@ -26,4 +29,113 @@
 	    	</nav>
 	    </div>
     {{/ output.custom_menu_flat }}
+    <div class="img-menu">
+        <img class="girl-icon" alt="" src="https://english.ican.vn/classroom/theme/mb2cg/pix/img_footer.png">
+    </div>
 </div>
+
+
+<style>
+
+#nav-drawer {
+    background-color: #00387C !important;
+    z-index: 9999;
+    top: 0px !important;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+@media (min-width: 1200px){
+    body:not(.uses-drawers).drawer-open-left {
+        margin-left: 450px;
+    }
+
+    #nav-drawer {
+	    max-width: 450px;
+	}
+
+	#nav-drawer.closed {
+	    left: -450px;
+	}
+}
+
+@media (max-width: 1200px){
+    body:not(.uses-drawers).drawer-open-left {
+        margin-left: 0px;
+    }
+
+    #nav-drawer {
+	    max-width: 350px;
+	}
+
+	#nav-drawer.closed {
+	    left: -350px;
+	}
+}
+
+#nav-drawer .navdrawer-header .logo {
+    display: flex;
+    justify-content: center;
+}
+
+#nav-drawer .navbar-nav .nav-link {
+    font-weight: 600;
+    color: #fff !important;
+    background: #00458A;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 16px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+#nav-drawer {
+    background-color: #00387C;
+}
+
+#nav-drawer.navbar-dark .navbar-nav .nav-link.active {
+    background: #FFFFFF;
+    color: #DB2590 !important;
+}
+
+.navbar-dark a .icon {
+    color: #1A9DFF!important;
+}
+
+#nav-drawer.navbar-dark .navbar-nav .nav-link.active .icon {
+    color: #DB2590 !important;
+}
+
+#nav-drawer .img-menu {
+    z-index: -1;
+    position: absolute;
+    bottom: 0px;
+}
+
+#nav-drawer .img-menu img{
+    width: 100%;
+    height: auto;
+}
+
+#nav-drawer .nav-item{
+    width: 100%;
+}
+
+.navdrawer-header .toggle-menu-icon{
+    background-color: #1e88e5;
+    position: fixed;
+    right: -15px;
+    top: 50%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 8px 0 0 4px;
+    cursor: pointer;
+}
+
+</style>
